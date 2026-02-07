@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Jarvis is a Rails 8.1 + React 19 application using Inertia.js as the bridge layer (no separate API). Built from the Inertia Rails React Starter Kit. Ruby 4.0, SQLite, Tailwind CSS 4, shadcn/ui (new-york style), TypeScript.
+Jarvis is a Rails 8.1 + React 19 application using Inertia.js as the bridge layer (no separate API). Built from the Inertia Rails React Starter Kit. Ruby 4.0, PostgreSQL 17.6, Tailwind CSS 4, shadcn/ui (new-york style), TypeScript.
 
 ## Commands
 
