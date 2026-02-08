@@ -1,6 +1,16 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  mount ActionCable.server => "/cable"
+
+  namespace :api do
+    resources :hook_events, only: [:create, :index] do
+      collection do
+        delete :destroy_all
+      end
+    end
+  end
+
   get  "sign_in", to: "sessions#new", as: :sign_in
   post "sign_in", to: "sessions#create"
   get  "sign_up", to: "users#new", as: :sign_up
